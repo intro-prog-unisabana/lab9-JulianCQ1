@@ -7,7 +7,7 @@ class Movie:
         self.year = year
 # FREEZE CODE END
     def __str__(self):
-        return f"Movie: {self.title}, (directed by {self.director}, {self.year})"
+        return f"Movie: {self.title}, (Directed by {self.director}, {self.year})"
 
 
 # FREEZE CODE BEGIN
@@ -18,4 +18,4 @@ if __name__ == "__main__":
     year = input("Enter the release year: ")
 # FREEZE CODE END
 movie = Movie(title, director, year)
-print(movie(title, director, year))
+print(movie)
