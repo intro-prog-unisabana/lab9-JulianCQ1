@@ -1,4 +1,5 @@
-# TODO: Import modules
+from car import Car
+import car
 def main():
     cars = {}  # Dictionary to store cars with car_id as key and car objects as values
 
@@ -13,13 +14,21 @@ def main():
         choice = input("Choose an option:\n")
 
         if choice == '1':
-          """TODO: Call the appropriate function from utils.py to create 
-          the car, add it to the dictionary, and print the car."""
+          def create_car_from_input():
+              car_id = input("Enter car ID:\n")
+              brand = input("Enter car brand:\n")
+              year = int(input("Enter car year:\n"))
+              color = input("Enter car color:\n")
+              mileage = float(input("Enter car mileage:\n"))
+              return Car(car_id, brand, year, color, mileage) 
 
 
         elif choice == '2':
-          """TODO: Call the appropriate function from utils.py to display
-          all the cars in the cars dictionary."""
+           def display_cars(car_dict):
+            for car in car_dict.values():
+              print(car)
+           
+          
 
         elif choice == '3':
           car_id = input("Enter the car ID to drive:\n")
