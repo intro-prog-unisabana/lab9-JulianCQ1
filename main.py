@@ -30,7 +30,7 @@ def main():
             if found is None:
                 print("Person not found.")
             else:
-                account_number = input("Enter a 4-digit account number:\n")
+                account_number = int(input("Enter a 4-digit account number:\n"))
                 balance = float(input("Enter the initial balance:\n"))
 
                 account = BankAccount(account_number, balance)
