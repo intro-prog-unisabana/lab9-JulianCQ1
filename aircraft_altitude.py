@@ -7,13 +7,11 @@ while True:
         break
     parts = command.split()
     if len(parts) != 2:
-        print("Invalid command format.")
         continue
     action, feet = parts
     try:
         feet = int(feet)
     except ValueError:
-        print("Invalid number of feet.")
         continue
     if action == "A":
         aircraft.ascend(feet)

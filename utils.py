@@ -13,3 +13,7 @@ def person_data():
         if done == "yes":
             break
     return person_object
+def balance_summary(person_list):
+    for person in person_list:
+        total = sum(acc.balance for acc in person.accounts)
+        print(f"{person.name} : {total:.2f}")
