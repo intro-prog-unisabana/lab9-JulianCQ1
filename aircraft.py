@@ -2,7 +2,7 @@
 class Aircraft:
     def __init__(self, model, altitude=0):
         self.model = model
-        self.altitude = altitude
+        self.altitude = 0
 
     def climb(self, feet):
         self.altitude += feet
