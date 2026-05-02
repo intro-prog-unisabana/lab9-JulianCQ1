@@ -3,8 +3,9 @@ from bank_account import BankAccount
 def person_data():
     name = input("\n")
     person_object = Person(name)
+    person= Person(name)
     while True:
-        account_number = input("\n")
+        account_number = int(input("\n"))
         balance = float(input("\n"))
         account = BankAccount(account_number, balance)
         person_object.add_account(account)
