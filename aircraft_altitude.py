@@ -19,6 +19,5 @@ while True:
         aircraft.ascend(feet)
     elif action == "D":
         aircraft.descend(feet)
-    else:
-        print("Invalid command.")
+   
 print(f"Final altitude: {aircraft.altitude} feet")
