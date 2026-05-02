@@ -9,6 +9,7 @@ while True:
     if len(parts) != 2:
         continue
     action, feet = parts
+    action = action.upper()
     try:
         feet = int(feet)
     except ValueError:

@@ -1,5 +1,5 @@
 class BankAccount:
-    def __init__(self, account_number, balance):
+    def __init__(self, account_number, balance=0.0):
         self.account_number = account_number
         self.balance = float(balance)
     def deposit(self, amount):
